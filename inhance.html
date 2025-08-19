@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style src="css" href="style.css"></style>
+    <style>
+            h1{
+                display: flex;
+    animation-duration: 5s  ;
+    animation-name: mystil;
+    color: rgb(18, 185, 60);
+            }
+
+@keyframes mystil{
+    from{margin-left: 100%;}
+    to{margin-left: 0%;}
+}
+form{
+    color: rgb(10, 36, 184);
+    background-color:gold;
+    text-align: center;
+    border: solid;
+    border-style:outset;
+    border-radius: 10px;
+    font-size: 20px;
+    font-style: italic;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    background-position: center;
+
+
+    }
+
+        
+    </style>
+</head>
+<h1> ankush</h1>
+<form>
+    <label for="username">enter you name</label>
+    <input type="text" name="username" placeholder="enter your name">
+    <label for="lastname">enter your last name</label>
+    <input type="text" name="lastname" placeholder="enter your last name">
+    <br>
+    <label for="age">age</label>
+    <input type="number" name="age" placeholder="enter your age" min="1" max="100">
+    <br>
+    <label for="email">enter your email</label>
+    <input  type="email" name="email" placeholder="enter your email">
+    <br>
+    <label> <input type="radio" name="male">male</label>
+    <label> <input type="radio" name="female"> female</label>
+    <br>
+    <select name="branches" id="branches">
+        <option value="electrical">electical</option>
+        <option value="machenical">machenical</option>
+        <option value="computer science">computer science</option>
+    </select>
+    <input type="submit">
+    <input type="reset">
+
+</form>
+</body>
+</html>

@@ -1,0 +1,13 @@
+h1{
+    animation-duration: 2s 4s;
+    animation-name: ankush;
+    color: red;
+}
+@keyframes ankush{
+    from{
+        margin-left: 100%;
+    }to{
+        margin-left: 0%;
+    }
+
+}
