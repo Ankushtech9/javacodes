@@ -8,3 +8,14 @@ class Node {
         left = right = null;
     }
 }
+class GfG {
+
+    static boolean isIdentical(Node r1, Node r2) {
+
+        // If both trees are empty, they are identical
+        if (r1 == null && r2 == null)
+            return true;
+
+        // If only one tree is empty, they are not identical
+        if (r1 == null || r2 == null)
+            return false
