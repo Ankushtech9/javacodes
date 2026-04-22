@@ -25,3 +25,33 @@ class GfG {
                isIdentical(r1.left, r2.left) &&
                isIdentical(r1.right, r2.right);
     }
+public static void main(String[] args) {
+
+        // Representation of input binary tree 1
+        //        1
+        //       / \
+        //      2   3
+        //     /
+        //    4
+        Node r1 = new Node(1);
+        r1.left = new Node(2);
+        r1.right = new Node(3);
+        r1.left.left = new Node(4);
+
+        // Representation of input binary tree 2
+        //        1
+        //       / \
+        //      2   3
+        //     /
+        //    4
+        Node r2 = new Node(1);
+        r2.left = new Node(2);
+        r2.right = new Node(3);
+        r2.left.left = new Node(4);
+
+        if (isIdentical(r1, r2))
+            System.out.println("true");
+        else
+            System.out.println("false");
+    }
+}
