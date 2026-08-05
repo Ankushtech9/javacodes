@@ -1,0 +1,21 @@
+public class Main
+{
+	public static void main(String[] args) {
+		int arr[]={1,2,0,0,5};
+		int n=arr.length;
+		int count=0;
+		int temp=0;
+	for(int i=0;i<n;i++){
+	    if(arr[i]!=0){
+	        arr[temp]=arr[i];
+	        temp++;
+	    }
+	}
+	for(int i=temp;i<n;i++){
+	    arr[i]=0;
+	}
+    for(int x:arr){
+        System.out.println(x);
+    }
+	}
+}
