@@ -1,0 +1,31 @@
+public class Main {
+    public static void main(String[] args) {
+
+        String[] arr = {"flower", "flow", "flight"};
+
+        String prefix = arr[0];
+
+        for (int i = 1; i < arr.length; i++) {
+
+            String current = arr[i];
+            int j = 0;
+
+            // Characters compare करो
+            while (j < prefix.length() &&
+                   j < current.length() &&
+                   prefix.charAt(j) == current.charAt(j)) {
+                j++;
+            }
+
+            // जितना common है, उतना prefix रखो
+            prefix = prefix.substring(0, j);
+
+            // अगर prefix empty हो गया
+            if (prefix.length() == 0) {
+                break;
+            }
+        }
+
+        System.out.println(prefix);
+    }
+}
